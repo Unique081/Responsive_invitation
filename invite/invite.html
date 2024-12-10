@@ -27,7 +27,7 @@
             position: relative;
             width: 100%;
             height: 100%;
-            background: url('envelope.jpeg') no-repeat center center/cover; /* Initial background image */
+            background: url('envelop-front.jpg') no-repeat center center/cover; /* Updated with the front envelope image */
             border-radius: 5px;
             overflow: hidden;
             transform-origin: top;
@@ -38,7 +38,7 @@
             position: absolute;
             width: 100%;
             height: 50%;
-            background: url('envelope-cover.jpg') no-repeat center center/cover;
+            background: url('envelope-back.jpg') no-repeat center center/cover; /* Updated with the back flap image */
             top: 0;
             left: 0;
             clip-path: polygon(0 100%, 50% 0, 100% 100%);
@@ -164,7 +164,7 @@
         const getTicketText = document.querySelector('.get-ticket-text');
         
         // Change the envelope background to a color once the button is clicked
-        envelope.style.backgroundColor = '#ffcc00'; // You can change this to any color you prefer
+        envelope.style.backgroundColor = '#ffff0'; // You can change this to any color you prefer
 
         envelope.classList.add('opened');
         sound.play();
@@ -227,4 +227,3 @@
 
 </body>
 </html>
-
